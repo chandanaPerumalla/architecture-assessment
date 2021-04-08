@@ -1,6 +1,7 @@
 # Architecture Document
 ## HighLevel Architecture
-![alt text](https://raw.githubusercontent.com/chandanaPerumalla/architecture-assessment/main/architecture-diagram.png)
+![Open Architecture_Diagram.excalidraw in excalidraw.com](https://raw.githubusercontent.com/chandanaPerumalla/architecture-assessment/main/architecture-diagram.png)
+
 ## Components
 * **Kafka**: To host the streams Stream_A and Stream_B
 * **Hadoop Cluster**: To run Spark applications and Hive queries
@@ -36,3 +37,7 @@
 2. The Spark consumers then write the micro batch of events for both streams to respective locations on an Object Storage into hourly partitions. The files written are in Parquet format, for efficient querying.
 3. Tables for both streams are created on top of stream data locations on the Object Storage.
 4. Query Hive for analytic workloads as the processing is done in parallel on the Hadoop Cluster.
+
+## Edit Architecture Diagram
+* Open excalidraw.com
+* Open the file Architecture_Diagram.excalidraw
