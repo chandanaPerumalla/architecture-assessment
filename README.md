@@ -1,4 +1,6 @@
 # Architecture Document
+## HighLevel Architecture
+![alt text](https://raw.githubusercontent.com/chandanaPerumalla/architecture-assessment/main/architecture-diagram.png)
 ## Components
 * **Kafka**: To host the streams Stream_A and Stream_B
 * **Hadoop Cluster**: To run Spark applications and Hive queries
